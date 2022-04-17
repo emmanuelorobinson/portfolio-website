@@ -15,7 +15,7 @@ export default {
     " I'm currently a Computer Science and Business Infromation Systems Double Major Student at Murdoch University. I love learning new stack/technology. I focus on understanding the most I can in different technologies.",
 
   // Landing Page Image (replace - root/public/assets/photo.jpg)
-  landingPageImage: "assets/1.jpg",
+  landingPageImage: "assets/Me.jpg",
 
   // Change Projects Here
   projects: [

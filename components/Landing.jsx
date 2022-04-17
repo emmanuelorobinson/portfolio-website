@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import Sidebars from './Sidebars'
-import Me from './Me'
+import Hero from './Hero'
 import AboutMe from './AboutMe'
 import Projects from './Projects'
 import Contacts from './Contacts'
@@ -15,7 +15,7 @@ const Landing = () => {
   return (
     <div className="display-flex ">
       <Header/>
-      <Me/>
+      <Hero/>
       <Projects />
     </div>
   )
