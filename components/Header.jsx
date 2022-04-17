@@ -29,7 +29,7 @@ const Header = (props) => {
               <a href="#" className={classes.li}>About</a>
             </li>
             <li>
-              <a href="#" className={classes.li}>Projects</a>
+              <a href="#projects" className={classes.li}>Projects</a>
             </li>
             <li>
               <a href="#" className={classes.li}>Contacts</a>
