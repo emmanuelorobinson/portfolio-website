@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html,
 body {
   padding: 0;
@@ -13,4 +18,81 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 10rem;
+}
+.hero-section .hero-container {
+  position: relative;
+  top: 2rem;
+  left: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+.hero-section .hero-container h1 {
+  font-size: 1rem;
+  font-family: "Montserrat";
+}
+.hero-section .hero-container h2 {
+  font-size: 3rem;
+  font-family: "Montserrat";
+  color: red;
+}
+
+.hero-section .hero-container h3 {
+  font-size: 3rem;
+  font-family: "Montserrat";
+  color: lightcoral;
+}
+
+.hero-section .hero-container p {
+  position: relative;
+  font-size: 1rem;
+  opacity: 0.4;
+}
+
+.hero-section .hero-container img {
+  position: relative;
+  height: 26rem;
+  width: 18rem;
+  top: 5rem;
+  border-style: solid;
+  border-width: 5px;
+  border-top: 0px;
+  border-left: 0px;
+  border-color: lightcoral;
+  transition: transform 0.5s ease;
+}
+
+.hero-section .image_container img:hover {
+  transform: scale(1.1);
+}
+
+.project-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: 20rem;
+}
+
+.project-section .project-container {
+  position: relative;
+  top: 2rem;
+  left: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.project-section .project-container h1 {
+  font-size: 1rem;
+  font-family: "Montserrat";
+  bottom: 2rem;
 }
