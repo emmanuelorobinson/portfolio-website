@@ -1,4 +1,5 @@
 import React from "react";
+import { lazyload } from "react-lazyload";
 
 const Hero = () => {
   return (
@@ -6,7 +7,7 @@ const Hero = () => {
     <div className="hero-section flex justify-center items-center v-screen">
       <div className="hero-container ">
         <h1>Hello, my name is</h1>
-        <h2>Emmanuel Robinson</h2>
+        <h2>Emmanuel Robinson.</h2>
         <h3>
           {"Eat, sleep, code, repeat."}
         </h3>
@@ -15,7 +16,9 @@ const Hero = () => {
         </p>
       </div>
       <div className="hero-container image_container">
+        <lazyload>
         <img src="assets/Me2.png" alt="Emmanuel Robinson" />
+        </lazyload>
       </div>
     </div>
   );

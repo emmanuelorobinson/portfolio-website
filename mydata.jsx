@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
   //(Please Do Not Remove The comma(,) after every variable)
 
@@ -24,10 +25,31 @@ export default {
       title: "Default",
       short: "Default",
       tech: "Default",
-      git: "Default",
+      git: "https://github.com/emmanuelorobinson/react-hooks",
     },
     {
       id: 2, //DO NOT CHANGE THIS (Please)😅
+      title: "Default",
+      short: "Default",
+      tech: "Default",
+      git: "Default",
+    },
+    {
+      id: 3, //DO NOT CHANGE THIS (Please)😅
+      title: "Default",
+      short: "Default",
+      tech: "Default",
+      git: "Default",
+    },
+    {
+      id: 4, //DO NOT CHANGE THIS (Please)😅
+      title: "Default",
+      short: "Default",
+      tech: "Default",
+      git: "Default",
+    },
+    {
+      id: 5, //DO NOT CHANGE THIS (Please)😅
       title: "Default",
       short: "Default",
       tech: "Default",

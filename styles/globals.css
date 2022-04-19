@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+/* declar var */
+
+:root{
+  --font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
+
 html,
 body {
   padding: 0;
@@ -10,6 +16,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #1f2937;
+  width: 100%;
+  scroll-behavior: smooth;
+
+  
 }
 
 a {
@@ -19,6 +29,22 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+@media screen and (min-width:480px) and (max-width:800px) {
+  /* Target landscape smartphones, portrait tablets, narrow desktops
+  */
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width:479px) {
+  /* Target portrait smartphones */
+  html {
+    font-size: 50%;
+  }
 }
 
 .hero-section {
@@ -38,18 +64,20 @@ a {
 }
 .hero-section .hero-container h1 {
   font-size: 1rem;
-  font-family: "Montserrat";
+  font-family: var(--font-family);
   color: lightcoral;
 }
 .hero-section .hero-container h2 {
   font-size: 3rem;
-  font-family: "Calibre";
+  font-family: var(--font-family);
+  font-weight: bold;
   color: #ccd6f6;
 }
 
 .hero-section .hero-container h3 {
   font-size: 3rem;
-  font-family: "Montserrat";
+  font-family: var(--font-family);
+  font-weight: bold;
   color: #8892b0;
 }
 
@@ -89,14 +117,69 @@ a {
 .project-section .project-container {
   position: relative;
   top: 2rem;
-  left: 4rem;
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: auto
 }
 
 .project-section .project-container h1 {
-  font-size: 1rem;
-  font-family: "Montserrat";
+  font-size: 2rem;
+  font-family: var(--font-family);
+  font-weight: bold;
   bottom: 2rem;
+  text-align: center;
+  color: #ccd6f6;
+}
+
+.project-section .project-container .project-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  cursor: pointer;
+}
+
+/* reduce the colums of tablet */
+@media (max-width: 1000px) {
+  .project-section .project-container .project-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* reduce the columns of mobile */
+@media (max-width: 700px) {
+  .project-section .project-container .project-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.project-section .project-container .project-box .project {
+
+  background-color: white;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  margin: 0.7rem;
+  width: 20rem;
+  height: 15rem;
+  
+  transition: transform 0.5s ease;
+}
+
+
+.project-section .project-container .project-box .project .svg-wrapper {
+  position: relative;
+  top: -1rem;
+  right: -15rem;
+
+  @media screen and (max-width: 700px) {
+    right: -10rem;
+  }
+}
+.project-section .project:hover {
+  transform: scale(1.1);
+}
+
+.project-section .project h2 {
+  font-family: var(--font-family);
+  color: #111827;
+  font-size: 1rem;
 }

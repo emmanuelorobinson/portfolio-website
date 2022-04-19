@@ -1,24 +1,45 @@
-import React from 'react'
-import Header from './Header'
-import Sidebars from './Sidebars'
-import Hero from './Hero'
-import AboutMe from './AboutMe'
-import Projects from './Projects'
-import Contacts from './Contacts'
-import Footer from './Footer'
-import styled from 'styled-components'
-
-
-
+import React, { Suspense } from "react";
+const Header = React.lazy(() => import("./Header"));
+const Hero = React.lazy(() => import("./Hero"));
+const Projects = React.lazy(() => import("./Projects"));
+import Head from "next/head";
 
 const Landing = () => {
-  return (
-    <div className="display-flex ">
-      <Header/>
-      <Hero/>
-      <Projects />
-    </div>
-  )
-}
+  const meta = {
+    title:
+      "Emmanuel Robinson - Software Engineer, Computer Science and BI Student",
+    description: `Emmanuel Robinson is a software engineer, computer science and business information systems student at Murdoch University.`,
+    image: "/assets/avatar.png",
+    type: "website",
+  };
 
-export default Landing
+  return (
+    <div>
+      <Head>
+        <title>{meta.title}</title>
+        <meta name="robots" content="follow, index" />
+        <meta content={meta.description} name="description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta property="og:type" content={meta.type} />
+        <meta property="og:site_name" content="Manu Arora" />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:image" content={meta.image} />
+        {meta.date && (
+          <meta property="article:published_time" content={meta.date} />
+        )}
+      </Head>
+      <div className="display-flex ">
+        <Suspense fallback={<div>Loading...</div>}>
+          <section>
+            <Header />
+            <Hero />
+            <Projects />
+          </section>
+        </Suspense>
+      </div>
+    </div>
+  );
+};
+
+export default Landing;
