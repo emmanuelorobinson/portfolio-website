@@ -7,6 +7,7 @@
 
 :root{
   --font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
 html,
@@ -47,16 +48,15 @@ a {
 }
 
 .hero-section {
+  top: 10rem;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
-  top: 10rem;
-  overflow: hidden;
 }
 .hero-section .hero-container {
   position: relative;
-  top: 2rem;
+  top: 7rem;
   left: 4rem;
   display: flex;
   flex-direction: column;
@@ -88,18 +88,27 @@ a {
   color: #fff;
 }
 
-.hero-section .hero-container img {
-  position: relative;
+.hero-section .image_container img {
+  
   height: auto;
   width: 30rem;
-  top: 2rem;
+  top: 1rem;
   right: 5rem;
+  position: relative;
   border-style: solid;
   border-width: 5px;
   border-top: 0px;
   border-left: 0px;
   border-color: #ccd6f6;
   transition: transform 0.5s ease;
+}
+
+/* scale image width down as screen decreases */
+@media screen and (max-width:800px) {
+  .hero-section .image_container img {
+    top: 6rem;
+    width: 20rem;
+  }
 }
 
 .hero-section .image_container img:hover {
@@ -127,7 +136,7 @@ a {
   font-size: 2rem;
   font-family: var(--font-family);
   font-weight: bold;
-  bottom: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
   color: #ccd6f6;
 }
@@ -155,9 +164,9 @@ a {
 
 .project-section .project-container .project-box .project {
 
-  background-color: white;
+  background-color: #111827;
   border-radius: 0.3rem;
-  padding: 1rem;
+  padding: 2rem;
   margin: 0.7rem;
   width: 20rem;
   height: 15rem;
@@ -181,6 +190,124 @@ a {
 
 .project-section .project h2 {
   font-family: var(--font-family);
-  color: #111827;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ccd6f6;
+}
+
+.project-section .project h3 {
+  font-family: var(--font-family);
+  color: #8892b0;
   font-size: 1rem;
+}
+
+.project-section .project footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.project-section .project p {
+  font-family: var(--font-family);
+  color: #fff;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: 30rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.contact-section .contact-container {
+  position: relative;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+
+.contact-section .contact-container h1 {
+  font-size: 3rem;
+  font-family: var(--font-family);
+  font-weight: bold;
+  text-align: center;
+  color: #ccd6f6;
+  margin-bottom: 1rem;
+}
+
+.contact-section .contact-container p {
+  position: relative;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+  color: #fff;
+}
+
+.contact-section .contact-container button {
+  position: relative;
+  top: 2rem;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: #ccd6f6;
+  background-color: #111827;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  border: none;
+  transition: transform 0.5s ease;
+}
+
+.resume-button button {
+  position: relative;
+  width: 7rem;
+  font-size: 0.875rem;
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: #ccd6f6;
+  background-color: #111827;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  border: none;
+  transition: transform 0.5s ease;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: 40rem;
+  padding: 2rem;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  font-family: var(--font-mono);
+  color: #ccd6f6;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: 10rem;
 }

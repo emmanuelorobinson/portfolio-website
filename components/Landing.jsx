@@ -1,7 +1,9 @@
-import React, { Suspense } from "react";
-const Header = React.lazy(() => import("./Header"));
-const Hero = React.lazy(() => import("./Hero"));
-const Projects = React.lazy(() => import("./Projects"));
+import React from "react";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
+import Contacts from "../components/Contacts";
+import Footer from "../components/Footer";
 import Head from "next/head";
 
 const Landing = () => {
@@ -19,7 +21,10 @@ const Landing = () => {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Manu Arora" />
         <meta property="og:description" content={meta.description} />
@@ -30,13 +35,11 @@ const Landing = () => {
         )}
       </Head>
       <div className="display-flex ">
-        <Suspense fallback={<div>Loading...</div>}>
-          <section>
-            <Header />
-            <Hero />
-            <Projects />
-          </section>
-        </Suspense>
+        <Header />
+        <Hero />
+        <Projects />
+        <Contacts />
+        <Footer />
       </div>
     </div>
   );

@@ -1,22 +1,9 @@
-import React, {useRef, useEffect} from "react";
-import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion";
+import React from "react";
 
 const Contacts = () => {
-
-  const revealContainer = useRef(null);
-  const prefersReducedMotion = usePrefersReducedMotion;
-
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
-    sr.reveal(revealContainer.current, srConfig());
-  }, []);
-
   return (
-    <div>
-      <div>
+    <section className="contact-section" id="contacts">
+      <div className="contact-container">
         <h1>Get In Touch</h1>
         <p>
           {
@@ -25,10 +12,12 @@ const Contacts = () => {
         </p>
 
         <button>
-          <a href="mailto:emmanueloerobinson@gmail.com"></a>
+          <a href="mailto:emmanueloerobinson@gmail.com">
+            Say Hello
+          </a>
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

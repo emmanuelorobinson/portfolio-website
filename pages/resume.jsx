@@ -5,7 +5,17 @@ const resume = () => {
   return (
     <div>
       <Header />
-      resume
+      <div className="resume_container">
+        <object
+          width="100%"
+          height="1100"
+          type="application/pdf"
+          data="/assets/resume.pdf"
+        >
+          <p>PDF cannot be displayed.</p>
+        </object>
+        <div className="spaceAbout"></div>
+      </div>
     </div>
   );
 };

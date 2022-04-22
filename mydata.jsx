@@ -22,38 +22,24 @@ export default {
   projects: [
     {
       id: 1, //DO NOT CHANGE THIS (Please)😅
-      title: "Default",
-      short: "Default",
-      tech: "Default",
-      git: "https://github.com/emmanuelorobinson/react-hooks",
+      title: "Task Manager",
+      short: "Built a backend API to store and retrieve tasks. Implemented auth using JWT.",
+      tech: "Node.js   Express   MongoDB",
+      git: "https://github.com/emmanuelorobinson/task-manager-backend",
     },
     {
       id: 2, //DO NOT CHANGE THIS (Please)😅
-      title: "Default",
-      short: "Default",
-      tech: "Default",
-      git: "Default",
+      title: "MUD Talk 2.0",
+      short: "Built a real-time chat application using Socket.io.",
+      tech: "Node.js   Express   Socket.io   Docker",
+      git: "https://github.com/emmanuelorobinson/MUDTalk",
     },
     {
       id: 3, //DO NOT CHANGE THIS (Please)😅
-      title: "Default",
-      short: "Default",
-      tech: "Default",
-      git: "Default",
-    },
-    {
-      id: 4, //DO NOT CHANGE THIS (Please)😅
-      title: "Default",
-      short: "Default",
-      tech: "Default",
-      git: "Default",
-    },
-    {
-      id: 5, //DO NOT CHANGE THIS (Please)😅
-      title: "Default",
-      short: "Default",
-      tech: "Default",
-      git: "Default",
+      title: "MUD Talk 1.0",
+      short: "Built a real-time chat application using BuddyPress. Implemented video chat using JitsiMeet",
+      tech: "WordPress   PHP   BuddyPress   JitsiMeet AWS",
+      git: "",
     },
     // Add More Projects Here
   ],
