@@ -7,6 +7,9 @@ const Header = (props) => {
   const [cssStyle, setCssStyle] = React.useState(classes["nav-menu"]);
   const [windowState, setWindowState] = React.useState(false);
 
+
+
+
   React.useEffect(() => {
     //listen for resize
     if (window.innerWidth < 768 && navbarOpen) {
@@ -16,7 +19,7 @@ const Header = (props) => {
       setCssStyle(classes["nav-menu"]);
       setWindowState(false);
     }
-  }, [window, navbarOpen]);
+  });
 
   return (
     <nav className={classes.navigation}>
