@@ -10,7 +10,7 @@ const resume = () => {
           width="100%"
           height="1100"
           type="application/pdf"
-          data="/assets/resume.pdf"
+          data="/assets/EmmanuelRobinson_Resume.pdf"
         >
           <p>PDF cannot be displayed.</p>
         </object>
