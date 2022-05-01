@@ -11,11 +11,7 @@ const Contacts = () => {
           }
         </p>
 
-        <button>
-          <a href="mailto:emmanueloerobinson@gmail.com">
-            Say Hello
-          </a>
-        </button>
+        <a href="mailto:emmanueloerobinson@gmail.com">Say Hello</a>
       </div>
     </section>
   );
