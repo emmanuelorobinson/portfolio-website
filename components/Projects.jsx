@@ -24,11 +24,11 @@ const Projects = () => {
             >
               <div key={project.id} className={`project`}>
                 <div className="svg-wrapper">
-                  <a
+                  {/* <a
                     href={project.git}
                     target="_blank"
                     rel="noopener noreferrer"
-                  >
+                  > */}
                     {project.git ? (
                       <Image
                         src="/assets/gitlogo.png"
@@ -39,7 +39,7 @@ const Projects = () => {
                     ) : (
                       ""
                     )}
-                  </a>
+                  {/* </a> */}
                 </div>
 
                 <h2>{project.title}</h2>
