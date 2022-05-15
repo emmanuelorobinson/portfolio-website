@@ -41,6 +41,14 @@ export default {
       tech: "WordPress   PHP   BuddyPress   JitsiMeet AWS",
       git: "",
     },
+    {
+      id: 4, //DO NOT CHANGE THIS (Please)😅
+      title: "Portfolio Website",
+      short: "View this current website. 90+ SEO, Performance, Accessibility, and Best Practice Optimized.",
+      tech: "Next.js   TailwindCSS",
+      git: "https://github.com/emmanuelorobinson/portfolio-website",
+    },
+
     // Add More Projects Here
   ],
 
