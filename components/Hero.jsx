@@ -15,7 +15,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="image_container">
-          <img src="assets/Me2.png" alt="Emmanuel Robinson" />
+          <img src="assets/Me2.png" alt="Emmanuel Robinson Memoji" />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ import Head from "next/head";
 const Landing = () => {
   const meta = {
     title:
-      "Emmanuel Robinson - Software Engineer, Computer Science and BI Student",
+      "Emmanuel Robinson",
     description: `Emmanuel Robinson is a software engineer, computer science and business information systems student at Murdoch University.`,
     image: "/assets/avatar.png",
     type: "website",
@@ -19,14 +19,15 @@ const Landing = () => {
     <div>
       <Head>
         <title>{meta.title}</title>
-        <meta name="robots" content="follow, index" />
+        <meta name="robots" content="noindex" />
         <meta content={meta.description} name="description" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Manu Arora" />
+        <meta property="author" content="Emmanuel Robinson" />
+        <meta property="og:site_name" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
