@@ -19,7 +19,7 @@ const Landing = () => {
     <div>
       <Head>
         <title>{meta.title}</title>
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
         <meta
           name="viewport"
