@@ -208,12 +208,18 @@ a {
 
 
 .project-section .project-container .project-box .project .svg-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: auto;
   position: relative;
   top: -1rem;
-  right: -15rem;
+  align-items: right;
+  justify-content: space-between;
+  width: 50px;
+  text-align: right;
 
   @media screen and (max-width: 700px) {
-    right: -10rem;
+    justify-content: right;
   }
 }
 

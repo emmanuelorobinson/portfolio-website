@@ -13,32 +13,43 @@ const Projects = () => {
           {mydata.projects.map((project) => (
             //if git is present then allow project-box to be clickable
             <a
-              {...(project.git
+              {...(project.web
                 ? {
-                    href: project.git,
+                    href: project.web,
                     target: "_blank",
                     rel: "noopener noreferrer",
                   }
-                : {})}
+                : {
+                    href: project.git,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  })}
               key={project.id}
             >
               <div key={project.id} className={`project`}>
                 <div className="svg-wrapper">
-                  {/* <a
-                    href={project.git}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  > */}
-                    {project.git ? (
-                      <Image
-                        src="/assets/gitlogo.png"
-                        alt="github"
-                        width={20}
-                        height={20}
-                      />
-                    ) : (
-                      ""
-                    )}
+                  {project.git ? (
+                    <Image
+                      src="/assets/gitlogo.png"
+                      alt="github"
+                      width={20}
+                      height={20}
+                      onClick={() => window.open(project.git, "_blank")}
+                    />
+                  ) : (
+                    ""
+                  )}
+                  {project.web ? (
+                    <Image
+                      src="/assets/web.svg"
+                      alt="web"
+                      width={20}
+                      height={20}
+                    />
+                  ) : (
+                    ""
+                  )}
+
                   {/* </a> */}
                 </div>
 

@@ -21,11 +21,20 @@ export default {
   // Change Projects Here
   projects: [
     {
-      id: 1, //DO NOT CHANGE THIS (Please)😅
+      id: 1,
+      title: "Rate My College Dubai",
+      short: "Built a fullstack application which allowed users to rate and review colleges in Dubai.",
+      tech: "Next.js   Redux   Firebase   Cloudinary",
+      git: "",
+      web: "http://ratemycollegedubai.com/"
+    },
+    {
+      id: 2, //DO NOT CHANGE THIS (Please)😅
       title: "Twitter Analytics",
       short: "Built a fullstack appliation which allowed tweets data from a searched user to be analyzed and displayed.",
       tech: "Next.js   Twitter API v2   REST APIs",
       git: "https://github.com/emmanuelorobinson/twitter-analytics",
+      web: "https://twitteranalytics.vercel.app/"
     },
     {
       id: 2, //DO NOT CHANGE THIS (Please)😅
@@ -50,13 +59,6 @@ export default {
     },
     {
       id: 5, //DO NOT CHANGE THIS (Please)😅
-      title: "MUD Talk 1.0",
-      short: "Built a real-time chat application using BuddyPress. Implemented video chat using JitsiMeet",
-      tech: "WordPress   PHP   BuddyPress   JitsiMeet AWS",
-      git: "",
-    },
-    {
-      id: 6, //DO NOT CHANGE THIS (Please)😅
       title: "Portfolio Website",
       short: "View this current website. 90+ SEO, Performance, Accessibility, and Best Practice Optimized.",
       tech: "Next.js   TailwindCSS",

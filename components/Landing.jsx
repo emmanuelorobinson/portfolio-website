@@ -9,7 +9,7 @@ import Head from "next/head";
 const Landing = () => {
   const meta = {
     title: "Emmanuel Robinson",
-    description: `Emmanuel Robinson is a software engineer, computer science and business information systems student at Murdoch University.`,
+    description: `Emmanuel Robinson. A software engineer, computer science and business information systems double major at Murdoch University.`,
     image: "/assets/avatar.png",
     type: "website",
   };
