@@ -1,6 +1,7 @@
 import React from "react";
 import mydata from "../mydata";
 import Image from "next/image";
+import gitlogo from "../public/assets/gitlogo.png";
 
 const Projects = () => {
   return (
@@ -30,7 +31,7 @@ const Projects = () => {
                 <div className="svg-wrapper">
                   {project.git ? (
                     <Image
-                      src="/assets/gitlogo.png"
+                      src={gitlogo}s
                       alt="github"
                       width={20}
                       height={20}
