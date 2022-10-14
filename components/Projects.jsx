@@ -31,7 +31,7 @@ const Projects = () => {
                 <div className="svg-wrapper">
                   {project.git ? (
                     <Image
-                      src={gitlogo}s
+                      src={gitlogo}
                       alt="github"
                       width={20}
                       height={20}
