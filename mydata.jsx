@@ -29,7 +29,15 @@ export default {
       web: "http://ratemycollegedubai.com/"
     },
     {
-      id: 2, //DO NOT CHANGE THIS (Please)😅
+      id: 2,
+      title: "LendSQR Dashboard",
+      short: "Built a mock dashboard for LendSQR which allowed users loans and account to be viewed by an admin.",
+      tech: "React.js   Typescript   SASS   Vercel",
+      git: "https://github.com/emmanuelorobinson/lendsqr-fe-test",
+      web: "https://lendsqr-dasboard.vercel.app/"
+    },
+    {
+      id: 3, //DO NOT CHANGE THIS (Please)😅
       title: "Twitter Analytics",
       short: "Built a fullstack appliation which allowed tweets data from a searched user to be analyzed and displayed.",
       tech: "Next.js   Twitter API v2   REST APIs",
@@ -37,28 +45,28 @@ export default {
       web: "https://twitteranalytics.vercel.app/"
     },
     {
-      id: 2, //DO NOT CHANGE THIS (Please)😅
+      id: 4, //DO NOT CHANGE THIS (Please)😅
       title: "Task Manager",
       short: "Built a backend API to store and retrieve tasks. Implemented auth using JWT.",
       tech: "Node.js   Express   MongoDB",
       git: "https://github.com/emmanuelorobinson/task-manager-backend",
     },
     {
-      id: 3, //DO NOT CHANGE THIS (Please)😅
+      id: 5, //DO NOT CHANGE THIS (Please)😅
       title: "MUD Talk 2.0",
       short: "Built a real-time chat application using Socket.io.",
       tech: "Node.js   Express   Socket.io   Docker",
       git: "https://github.com/emmanuelorobinson/MUDTalk",
     },
     {
-      id: 4, //DO NOT CHANGE THIS (Please)😅
+      id: 6, //DO NOT CHANGE THIS (Please)😅
       title: "CMC Web Scrapper",
       short: "Built a python application which allowed information from coinmarketcap to be retrived and stored.",
       tech: "Python   BeautifulSoup",
       git: "https://github.com/emmanuelorobinson/cmc-web-scraper",
     },
     {
-      id: 5, //DO NOT CHANGE THIS (Please)😅
+      id: 6, //DO NOT CHANGE THIS (Please)😅
       title: "Portfolio Website",
       short: "View this current website. 90+ SEO, Performance, Accessibility, and Best Practice Optimized.",
       tech: "Next.js   TailwindCSS",
