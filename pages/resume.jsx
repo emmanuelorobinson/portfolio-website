@@ -6,7 +6,7 @@ const resume = () => {
   return (
     <div>
       <Head>
-        <title>Emmanuel Ejakpomewhe's Resume</title>
+        <title>Emmanuel Ejakpomewhe&apos;s Resume</title>
         <meta content="Emmanuel Ejakpomewhe's resume" name="description" />
         <meta property="og:title" content="Resume" />
         <meta property="og:description" content="Emmanuel Robinson Ejakpomewhe's resume" />
