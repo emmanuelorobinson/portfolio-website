@@ -8,8 +8,8 @@ import Head from "next/head";
 
 const Landing = () => {
   const meta = {
-    title: "Emmanuel Robinson",
-    description: `Emmanuel Robinson. A software engineer, computer science and business information systems double major at Murdoch University.`,
+    title: "Emmanuel Ejakpomewhe",
+    description: `Emmanuel Ejakpomewhe (Robinson). A software engineer, computer science and business information systems double major at Murdoch University.`,
     image: "/assets/avatar.png",
     type: "website",
   };

@@ -3,17 +3,17 @@ export default {
   //(Please Do Not Remove The comma(,) after every variable)
 
   //Change The Website Template
-  name: "Emmanuel",
+  name: "Emmanuel Ejakpomewhe",
 
   //Contact Email
   contactEmail: "emmanueloerobinson@gmail.com",
 
   // Landing Page Name
-  landingPageName: "Emmanuel Robinson",
+  landingPageName: "Emmanuel Ejakpomewhe",
 
   // Landing Page Paragraph
   landingPagePara:
-    " I'm currently a Computer Science and Business Infromation Systems Double Major Student at Murdoch University. I love learning new stack/technology. I focus on understanding the most I can in different technologies.",
+    "Hey, my name is Emmanuel Ejakpomewhe. I usually go by Emmanuel Robinson because it saves time having to teach people the correct pronunciation of my family name. I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently a SWE @ WeDance. ",
 
   // Landing Page Image (replace - root/public/assets/photo.jpg)
   landingPageImage: "assets/Me.jpg",

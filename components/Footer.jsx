@@ -14,7 +14,7 @@ const Footer = () => {
             <IConLinkedin />
           </a>
         </div>
-        <p>Designed Built by Emmanuel Robinson</p>
+        <p>Designed Built by Emmanuel Ejakpomewhe</p>
       </footer>
     </div>
   );
