@@ -1,7 +1,7 @@
 import React from "react";
 import mydata from "../mydata";
-import Image from "next/image";
-import gitlogo from "../public/assets/gitlogo.png";
+import {AiFillGithub} from "react-icons/ai"
+import {GiSpiderWeb} from "react-icons/gi"
 
 const Projects = () => {
   return (
@@ -30,22 +30,17 @@ const Projects = () => {
               <div key={project.id} className={`project`}>
                 <div className="svg-wrapper">
                   {project.git ? (
-                    <Image
-                      src={gitlogo}
-                      alt="github"
-                      width={20}
-                      height={20}
-                      onClick={() => window.open(project.git, "_blank")}
+                    <AiFillGithub size={20} 
+                    onClick={() => window.open(project.git, "_blank")}
+                    alt="github"
                     />
                   ) : (
                     ""
                   )}
                   {project.web ? (
-                    <Image
-                      src="/assets/web.svg"
-                      alt="web"
-                      width={20}
-                      height={20}
+                    <GiSpiderWeb size={20}
+                    onClick={() => window.open(project.web, "_blank")}
+                    alt="web"
                     />
                   ) : (
                     ""

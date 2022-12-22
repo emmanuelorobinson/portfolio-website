@@ -7,15 +7,16 @@ const Hero = () => {
       <div className="hero-container ">
         <h1>Hello, my name is</h1>
         <h2>Emmanuel Ejakpomewhe.</h2>
-        <h3>{"I like building cool things."}</h3>
+        {/* <h3>{"I like building cool things."}</h3> */}
+        <br />
         <p>
           {
-            "Hey, my name is Emmanuel Ejakpomewhe. I usually go by Emmanuel Robinson because it saves time having to teach people the correct pronunciation of my family name. I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently a SWE @ WeDance."
+            "I usually go by Emmanuel Robinson because it saves time having to teach people the correct pronunciation of my family name. I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently a SWE @ WeDance."
           }
         </p>
       </div>
       <div className="image_container">
-        <img src="assets/Me2.png" alt="Emmanuel Ejakpomewhe Memoji" />
+        <img src="avatar.png" alt="Emmanuel Ejakpomewhe Memoji" />
       </div>
     </div>
   );
