@@ -6,12 +6,12 @@ const resume = () => {
   return (
     <div>
       <Head>
-        <title>Resume</title>
-        <meta content="Emmanuel Robinson's resume" name="description" />
+        <title>Emmanuel Ejakpomewhe&apos;s Resume</title>
+        <meta content="Emmanuel Ejakpomewhe's resume" name="description" />
         <meta property="og:title" content="Resume" />
-        <meta property="og:description" content="Emmanuel Robinson's resume" />
+        <meta property="og:description" content="Emmanuel Robinson Ejakpomewhe's resume" />
         <meta property="og:image" content="/assets/avatar.png" />
-        <neta property="author" content="Emmanuel Robinson" />
+        <neta property="author" content="Emmanuel Ejakpomewhe" />
       </Head>
       <Header />
       <div className="resume_container">

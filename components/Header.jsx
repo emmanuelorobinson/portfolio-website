@@ -26,7 +26,7 @@ const Header = (props) => {
       <div className={classes.container}>
         <Link href="/">
           <a>
-            <span className>emmanuel robinson.</span>
+            <span className>emmanuel ejakpomewhe.</span>
           </a>
         </Link>
 
