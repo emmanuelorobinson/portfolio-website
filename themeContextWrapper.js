@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { ThemeContext, themes } from './contexts/theme-context';
+import {getLocalTheme, setLocalTheme} from './utils/localStorage';
 
 export default function ThemeContextWrapper(props) {
-  const [theme, setTheme] = useState(themes.light);
+  const [theme, setTheme] = useState(getLocalTheme() || themes.light);
 
   function changeTheme(theme) {
     setTheme(theme);
+    setLocalTheme(theme);
+    
   }
 
   useEffect(() => {

@@ -6,6 +6,8 @@ import Projects from '../components/Projects'
 import Contacts from '../components/Contacts'
 import Footer from '../components/Footer'
 import ThemeContextWrapper from '../themeContextWrapper'
+import { useEffect } from "react";
+import { ThemeContext, themes } from "../contexts/theme-context";
 
 export default function Home() {
 

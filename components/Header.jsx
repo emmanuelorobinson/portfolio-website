@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import classes from "../styles/navbar.module.css";
 import { ThemeContext, themes } from "../contexts/theme-context";
@@ -6,6 +6,7 @@ import { ThemeContext, themes } from "../contexts/theme-context";
 const Header = (props) => {
 
   const [darkMode, setDarkMode] = React.useState(false);
+
 
   return (
     <nav className={classes.navigation}>
@@ -28,6 +29,7 @@ const Header = (props) => {
                   <span onClick={
                     () => {
                       setDarkMode(!darkMode);
+                      localStorage.setItem("darkMode", !darkMode);
                       changeTheme(darkMode ? themes.light : themes.dark);
                     }
                   }>
