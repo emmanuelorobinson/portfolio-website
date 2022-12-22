@@ -69,6 +69,11 @@ const Header = (props) => {
               </Link>
             </li>
             <li>
+              <Link href="https://blog.emmanuelrobinson.dev/">
+                <a>Blog</a>
+              </Link>
+            </li>
+            <li>
               <Link href="/#projects">
                 <a>Projects</a>
               </Link>
