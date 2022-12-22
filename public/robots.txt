@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://emmanuelrobinson.dev
+
+# Sitemaps
+Sitemap: https://emmanuelrobinson.dev/sitemap.xml
