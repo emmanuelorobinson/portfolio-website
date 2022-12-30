@@ -1,4 +1,5 @@
 import React from "react";
+import mydata from "../mydata";
 
 const Hero = () => {
   return (
@@ -10,9 +11,7 @@ const Hero = () => {
         {/* <h3>{"I like building cool things."}</h3> */}
         <br />
         <p>
-          {
-            "I usually go by Emmanuel Robinson because it saves time having to teach people the correct pronunciation of my family name. I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently a SWE @ WeDance."
-          }
+          {mydata.landingPagePara}
         </p>
       </div>
       <div className="image_container">

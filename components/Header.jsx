@@ -7,6 +7,15 @@ const Header = (props) => {
 
   const [darkMode, setDarkMode] = React.useState(false);
 
+  useEffect(() => {
+    const temp = localStorage.getItem("darkMode");
+    if (temp === "true") {
+      setDarkMode(true);
+    } else {
+      setDarkMode(false);
+    }
+  }, []);
+
 
   return (
     <nav className={classes.navigation}>
