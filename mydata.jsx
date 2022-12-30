@@ -13,7 +13,7 @@ export default {
 
   // Landing Page Paragraph
   landingPagePara:
-    "Hey, my name is Emmanuel Ejakpomewhe. I usually go by Emmanuel Robinson. I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently a SWE @ WeDance. ",
+    "I usually go by Emmanuel Robinson. I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently a SWE @ WeDance. ",
 
   // Landing Page Image (replace - root/public/assets/photo.jpg)
   landingPageImage: "assets/Me.jpg",

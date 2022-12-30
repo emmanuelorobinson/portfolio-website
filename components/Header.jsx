@@ -41,7 +41,9 @@ const Header = (props) => {
                       localStorage.setItem("darkMode", !darkMode);
                       changeTheme(darkMode ? themes.light : themes.dark);
                     }
-                  }>
+                  }
+                  className={classes.themeSwitcher}
+                  >
                     {darkMode ? "🌚" : "🌝"}
                   </span>
                   )}

@@ -305,6 +305,10 @@ a {
 /* reduce the columns of mobile */
 @media (max-width: 700px) {
 
+  .project-section .project:hover {
+    transform: none
+  }
+
   .project-section .project-container .project-box .project {
 
     background-color: var(--card);

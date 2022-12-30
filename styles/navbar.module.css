@@ -31,10 +31,28 @@
   align-self: center;
 }
 
+
 @media (min-width: 768px) {
 
   .navigation {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+@media (max-width: 768px) {
+
+  .navigation .container .themeSwitcher {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+
+  }
+
+
+  .navigation .container a {
+    font-size: 1.4rem;
+  }
+
+
 }
