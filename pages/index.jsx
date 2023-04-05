@@ -13,7 +13,7 @@ export default function Home() {
 
   const meta = {
     title: "Emmanuel Ejakpomewhe",
-    description: `Emmanuel Ejakpomewhe (Robinson). A software engineer, computer science and business information systems double major at Murdoch University.`,
+    description: `Emmanuel Ejakpomewhe who usually goes by Emmanuel Robinson is software engineer, computer science and business information systems double major at Murdoch University. He currently works as a Research And Development Engineer at DEWA R&D Center`,
     image: "/assets/avatar.png",
     type: "website",
   };
