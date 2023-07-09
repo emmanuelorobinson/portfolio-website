@@ -10,7 +10,7 @@ const Footer = () => {
           <a href="https://github.com/emmanuelorobinson" target='_blank' rel="noreferrer">
             <IconGithub />
           </a>
-          <a href="https://www.linkedin.com/in/emmanuel-robinson-1a22171b0/" target='_blank' rel="noreferrer">
+          <a href="https://www.linkedin.com/in/emmanuelejakpomewhe/" target='_blank' rel="noreferrer">
             <IConLinkedin />
           </a>
         </div>
