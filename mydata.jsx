@@ -83,7 +83,7 @@ export default {
     // Add Or Remove The Link Accordingly
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/emmanuel-robinson-1a22171b0/",
+      url: "https://www.linkedin.com/in/emmanuelejakpomewhe/",
     },
     {
       name: "Github",
