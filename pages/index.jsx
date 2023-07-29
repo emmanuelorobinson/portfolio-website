@@ -13,7 +13,7 @@ export default function Home() {
 
   const meta = {
     title: "Emmanuel Ejakpomewhe",
-    description: `Emmanuel Ejakpomewhe who usually goes by Emmanuel Robinson is software engineer, computer science and business information systems double major at Murdoch University. He currently works as a Research And Development Engineer at DEWA R&D Center`,
+    description: `Emmanuel Ejakpomewhe who usually goes by Emmanuel Robinson is a software engineer, computer science and business information systems double major at Murdoch University. He currently works as a Software Engineer at Dubai Civil Aviation Authority,
     image: "/assets/avatar.png",
     type: "website",
   };
